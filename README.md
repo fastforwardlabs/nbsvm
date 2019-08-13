@@ -4,6 +4,19 @@ An sklearn-compatible classifier for benchmarking NLP classification problems.
 The model used is the NBSVM described in section 2.3 of the paper
 [Baselines and Bigrams: Simple, Good Sentiment and Topic Classification](https://nlp.stanford.edu/pubs/sidaw12_simple_sentiment.pdf). The authors provide their own (matlab) [implementation](https://github.com/sidaw/nbsvm).
 
+## Installation
+
+Simply clone the repo, `cd` into the project root directory and install into a python environment with `pip install .`
+For example:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+git clone git@github.com:fastforwardlabs/nbsvm.git
+cd nbsvm
+pip install .
+```
+
 ## Usage
 
 The NBSVM classifier is intended to be used on features transformed by either `CountVectorizer` or `TfidfVectorizer`.
