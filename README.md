@@ -14,6 +14,7 @@ python3 -m venv venv
 source venv/bin/activate
 git clone git@github.com:fastforwardlabs/nbsvm.git
 cd nbsvm
+pip install -r requirements.txt
 pip install .
 ```
 
